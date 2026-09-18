@@ -58,7 +58,7 @@ body {
     font-size: 4rem;
     font-weight: 400;
     line-height: 1;
-    color: rgb(82, 82, 109);
+    color: white;
 }
 
 .shelter-header__intro {
@@ -90,6 +90,10 @@ main {
 
 .shelter-dogs__list {
     /* Apartado 4*/
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+
 }
 
 .dog-card {
@@ -156,7 +160,7 @@ main {
     background: var(--color-sage);
 }
 
-.shelter-contact__copy > p:last-child {
+.shelter-contact__copy>p:last-child {
     max-width: 360px;
     margin-bottom: 0;
     color: var(--color-muted);
@@ -242,5 +246,10 @@ main {
         box-shadow: 0 24px 50px rgb(36 50 59 / 16%);
         transform: translateY(-5px);
     }
-}
 
+    @media (min-width: 768px) {
+        .shelter-header__title {
+            font-size: 6rem;
+        }
+    }
+}
