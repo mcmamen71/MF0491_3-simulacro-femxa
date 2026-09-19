@@ -16,7 +16,7 @@
 function gestionarCuenta(saldo, operacion, cantidad) {
 if (operacion === "ingresar") {
     return saldo + cantidad;
-  } else if (operacion === "retirar") {
+  } else  {
     return saldo - cantidad;
   }
 }

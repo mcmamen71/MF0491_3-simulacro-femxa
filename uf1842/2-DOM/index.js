@@ -5,8 +5,8 @@ const calculateBtn = document.querySelector("#calculate");
 const totalAmount = document.querySelector("#total");
 
 calculateBtn.addEventListener("click", function() {
- const bill = parseFloat(billInput.value) || 0;
-    const tip = parseFloat(tipInput.value) || 0;
+ const bill = +billInput.value;
+    const tip = +tipInput.value;
     const tipAmount = bill * (tip / 100);
     const total = bill + tipAmount; 
     totalAmount.textContent = total.toFixed(2);  
